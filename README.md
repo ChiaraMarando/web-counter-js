@@ -11,4 +11,4 @@ E' possibile:
 
 ## Screenshot
 
-
+https://raw.githubusercontent.com/ChiaraMarando/web-counter-js/refs/heads/main/img/screenshot-counter.png
