@@ -13,7 +13,9 @@ E' possibile:
 
 ## Screenshot
 
-[Screenshot progetto](screenshot-counter.png)
+<p align="center">
+  <img src="img/screenshot-counter.png" alt="Screenshot del progetto" width="600">
+</p>
 
 ## Link
 
