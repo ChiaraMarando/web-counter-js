@@ -12,7 +12,7 @@ E' possibile:
 -salvare il valore in localStorage
 
 ## Screenshot
-
+[screenshot counter]
 <p align="center">
   <img src="img/screenshot-counter.png" alt="Screenshot del progetto" width="600">
 </p>
