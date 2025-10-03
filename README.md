@@ -13,7 +13,7 @@ E' possibile:
 
 ## Screenshot
 
-[Screenshot progetto](img/screenshot-counter.png)
+[Screenshot progetto](screenshot-counter.png)
 
 ## Link
 
