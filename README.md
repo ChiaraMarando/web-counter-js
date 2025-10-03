@@ -1,9 +1,11 @@
 ## Web counter js
+
 Progetto JavaScript Chiara Marando - Web Counter in js
 L'applicazione web consiste in un contatore semplice.
 
 ## Funzionalità
-E' possibile: 
+
+E' possibile:
 -incrementare il valore
 -decrementare il valore (senza poter però scendere sotto lo zero)
 -resettare il valore
@@ -11,4 +13,4 @@ E' possibile:
 
 ## Screenshot
 
-https://raw.githubusercontent.com/ChiaraMarando/web-counter-js/refs/heads/main/img/screenshot-counter.png
+[Screenshot progetto](img/screenshot-counter.png)
