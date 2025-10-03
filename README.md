@@ -14,3 +14,7 @@ E' possibile:
 ## Screenshot
 
 [Screenshot progetto](img/screenshot-counter.png)
+
+## Link
+
+https://chiara-marando-web-counter.netlify.app/
