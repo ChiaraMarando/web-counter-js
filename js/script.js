@@ -1,31 +1,28 @@
 const body = document.querySelector("body");
 
-const container = document.createElement("div");
-const contatore = document.createElement("p");
-const containerBtn = document.createElement("div");
-const incrementoBtn = document.createElement("button");
-const resetBtn = document.createElement("button");
-const decrementoBtn = document.createElement("button");
+function creaElemento(tag, classi = [], text = "") {
+  const el = document.createElement(tag);
+  if (classi.length) el.classList.add(...classi);
+  if (text) el.textContent = text;
+  return el;
+}
 
-contatore.textContent = 0;
-incrementoBtn.textContent = "+";
-resetBtn.textContent = "Reset";
-decrementoBtn.textContent = "-"
+const container = creaElemento("div",["container"]);
+const contatore = creaElemento("p", ["contatore"], "0");
+const containerBtn = creaElemento("div", ["containerBtn"]);
+const incrementoBtn = creaElemento("button", ["incrementoBtn", "btn"], "+");
+const resetBtn = creaElemento("button", ["resetBtn", "btn"], "Reset");
+const decrementoBtn = creaElemento("button", ["decrementoBtn", "btn"], "-");
 
-container.classList.add("container");
-contatore.classList.add("contatore");
-containerBtn.classList.add("containerBtn");
-incrementoBtn.classList.add("incrementoBtn", "btn");
-resetBtn.classList.add("reseteBtn", "btn");
-decrementoBtn.classList.add("decrementoBtn", "btn");
-
+incrementoBtn.setAttribute("aria-label", "Incrementa contatore");
+decrementoBtn.setAttribute("aria-label", "Decrementa contatore");
+resetBtn.setAttribute("aria-label", "Resetta contatore");
 
 container.appendChild(contatore);
 container.appendChild(containerBtn);
 containerBtn.appendChild(decrementoBtn);
 containerBtn.appendChild(resetBtn);
 containerBtn.appendChild(incrementoBtn);
-
 
 body.appendChild(container);
 
@@ -56,7 +53,13 @@ function resetta() {
   aggiornaContatore();
 }
 
-incrementoBtn.addEventListener("click", incrementa);
-decrementoBtn.addEventListener("click", decrementa);
-resetBtn.addEventListener("click", resetta);
+containerBtn.addEventListener("click", function(event) {
+  if (event.target.classList.contains("incrementoBtn")) {
+    incrementa();
+  } else if (event.target.classList.contains("decrementoBtn")) {
+    decrementa();
+  } else if (event.target.classList.contains("resetBtn")) {
+    resetta();
+  }
+});
 
