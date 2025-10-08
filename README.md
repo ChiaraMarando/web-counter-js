@@ -19,4 +19,4 @@ E' possibile: <br>
 
 ## Link
 
-https://chiara-marando-web-counter.netlify.app/
+https://counter-app-chiara.web.app
